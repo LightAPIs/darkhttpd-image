@@ -34,7 +34,7 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           push: true
-          context: .
+          context: ./darkhttpd
           file: ./darkhttpd/Dockerfile
           tags: |
             ${{ env.DOCKERHUB_REPO }}:latest
